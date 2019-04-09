@@ -1,0 +1,25 @@
+main {
+    overflow-y:scroll;
+    overflow-x: hidden;
+  .containGallery {
+    line-height: 0;
+    column-count: 4;
+    column-gap: 1px;
+    margin-top: 15vh;
+    margin-right: 2vh;
+
+    img {
+      margin: 1px 1px 1px 1px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+#element::-webkit-scrollbar {
+  display: none;
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
