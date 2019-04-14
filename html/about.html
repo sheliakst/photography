@@ -21,15 +21,12 @@
     <link rel="stylesheet" type="text/css" href="../css/transition.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../js/loaders.js"></script>
 
     <script src="../js/index.js"></script>
   </head>
   <body>
-    <div class="preload">
-      <h1>LOAD</h1>
-    </div>
-    <div class="wrapper">
+   
+    <div class="wrapper loadwrapper">
       <header>
         <div>
           <p><a href="../index.html"> <svg
@@ -57,7 +54,7 @@
          </svg></a></p>
         </div>
       </header>
-      <nav>
+      <nav class="loadnav">
         <ul class="about">
           <li><a href="../index.html"><img src="../photos/drawing.svg" alt=""></a></li>
           <li class="Left"><a href="./portfolio.html">Portfolio</a></li>
@@ -65,7 +62,7 @@
           <li class="Left"><a href="./Contact.html">Contact</a></li>
         </ul>
       </nav>
-      <main>
+      <main class="loadmain">
         <div>
           <img src="../photos//Front/front8.jpg" alt="" />
           <p>
@@ -73,8 +70,9 @@
           </p>
         </div>
       </main>
-      <footer>
-        <p>2019 &copy; Stamatis Sarris</p>
+      <footer class="loadfooter">
+        <p>         <img src="../photos/instgramLogo.png" alt="">
+          2019 &copy; Stamatis Sarris</p>
       </footer>
     </div>
   </body>

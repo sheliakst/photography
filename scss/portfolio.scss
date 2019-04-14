@@ -1,17 +1,25 @@
 main {
-    overflow-y:scroll;
-    overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   .containGallery {
     line-height: 0;
     column-count: 4;
     column-gap: 1px;
-    margin-top: 15vh;
     margin-right: 2vh;
 
     img {
+      display:block;
       margin: 1px 1px 1px 1px;
       width: 100%;
       height: auto;
+      transition: opacity 0.4s ease-in-out;
+      &:hover {
+        opacity: 0.8;
+
+        transform: scale(1.1);
+
+        cursor: pointer;
+      }
     }
   }
 }
@@ -19,7 +27,6 @@ main {
   display: none;
 }
 
-
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+  display: none;
 }

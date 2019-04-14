@@ -188,9 +188,8 @@ body .wrapper footer {
   font-size: 1rem;
 }
 
-body .wrapper footer p {
-  position: absolute;
-  bottom: 10px;
+body .wrapper footer img {
+  width: 1vw;
 }
 
 .navLeft {

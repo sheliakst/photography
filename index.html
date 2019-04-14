@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css?family=Quicksand"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="../css/transition.css" />
 
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/slider.css" />
@@ -23,7 +24,7 @@
     <script src="./js/index.js"></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper loadwrapper">
       <header>
         <div>
           <a href="./index.html">
@@ -52,7 +53,7 @@
          </svg></a></p>
         </div>
       </header>
-      <nav>
+      <nav class="loadnav">
         <ul class="home">
             <li><a href="#"><img src="./photos/drawing.svg" alt=""></a></li>
 
@@ -61,7 +62,7 @@
           <li><a href="./html/Contact.html">Contact</a></li>
         </ul>
       </nav>
-      <main>
+      <main class="loadmain">
         <div class="slider">
           <div class="slide "></div>
           <div class="slide "></div>
@@ -75,8 +76,8 @@
           <button id="next"><i class="fas fa-arrow-right"></i></button>
         </div>
       </main>
-      <footer>
-        <p>2019 &copy; Stamatis Sarris</p>
+      <footer class="loadfooter">
+        <p> <img src="../photos/instgramLogo.png" alt="">| 2019 &copy; Stamatis Sarris</p>
       </footer>
     </div>
     <script src="./js/slider.js"></script>
