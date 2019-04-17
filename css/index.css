@@ -20,13 +20,12 @@ body .wrapper {
 
 @media screen and (min-width: 1281px) {
   body .wrapper {
-    -ms-grid-columns: 1fr 5fr;
-        grid-template-columns: 1fr 5fr;
-    -ms-grid-rows: 18vh 70vh 10vh;
-        grid-template-rows: 18vh 70vh 10vh;
-    grid-gap: 2px;
+    -ms-grid-columns: 0.5fr 8fr;
+        grid-template-columns: 0.5fr 8fr;
+    -ms-grid-rows: 18vh 72vh 10vh;
+        grid-template-rows: 18vh 72vh 10vh;
         grid-template-areas: "header header" "nav main" "footer footer";
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -34,10 +33,10 @@ body .wrapper {
   body .wrapper {
     -ms-grid-columns: 1fr 4fr;
         grid-template-columns: 1fr 4fr;
-    -ms-grid-rows: 18vh 70vh 10vh;
-        grid-template-rows: 18vh 70vh 10vh;
-    grid-gap: 2px;
+    -ms-grid-rows: 18vh 72vh 10vh;
+        grid-template-rows: 18vh 72vh 10vh;
         grid-template-areas: "header header" "nav main" "footer footer";
+    font-size: 1.4rem;
   }
 }
 
@@ -47,8 +46,9 @@ body .wrapper {
         grid-template-columns: 1fr;
     -ms-grid-rows: 10vh 10vh 70vh 10vh;
         grid-template-rows: 10vh 10vh 70vh 10vh;
-    grid-gap: 2px;
+    grid-gap: 25px;
         grid-template-areas: "header" "nav" "main" "footer";
+    font-size: 1.1rem;
   }
 }
 
@@ -58,8 +58,9 @@ body .wrapper {
         grid-template-columns: 1fr;
     -ms-grid-rows: 10vh 10vh 70vh 10vh;
         grid-template-rows: 10vh 10vh 70vh 10vh;
-    grid-gap: 2px;
+    grid-gap: 25px;
         grid-template-areas: "header" "nav" "main" "footer";
+    font-size: 1.2rem;
   }
 }
 
@@ -69,8 +70,9 @@ body .wrapper {
         grid-template-columns: 1fr;
     -ms-grid-rows: 10vh 10vh 70vh 10vh;
         grid-template-rows: 10vh 10vh 70vh 10vh;
-    grid-gap: 2px;
+    grid-gap: 25px;
         grid-template-areas: "header" "nav" "main" "footer";
+    font-size: 1rem;
   }
 }
 
@@ -80,8 +82,9 @@ body .wrapper {
         grid-template-columns: 1fr;
     -ms-grid-rows: 10vh 10vh 70vh 10vh;
         grid-template-rows: 10vh 10vh 70vh 10vh;
-    grid-gap: 2px;
+    grid-gap: 25x;
         grid-template-areas: "header" "nav" "main" "footer";
+    font-size: 1em;
   }
 }
 
@@ -92,8 +95,8 @@ body .wrapper header {
 
 body .wrapper header div {
   position: relative;
-  top: 25px;
-  left: 15vw;
+  top: 20px;
+  left: 8vw;
 }
 
 body .wrapper header div svg {
@@ -130,25 +133,35 @@ body .wrapper nav ul {
 }
 
 body .wrapper nav ul:hover li {
-  /*           opacity: 0.5;
- */
   cursor: pointer;
-  /*           transform: translateX(-3px);
- */
+}
+
+@media (max-width: 1024px) {
+  body .wrapper nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 
 body .wrapper nav ul li {
-  padding: 35px 0;
+  opacity: 0.8;
+  padding: 20px 0;
   display: inline-block;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  /*  &:hover {
-            opacity: 1;
-            transform: translateX(3px);
-          } */
 }
 
 body .wrapper nav ul li img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   width: 35px;
 }
 
@@ -163,7 +176,8 @@ body .wrapper nav ul li img {
 
 body .wrapper nav ul li a {
   text-decoration: none;
-  color: black;
+  opacity: 0.8;
+  color: #4b4b4b;
 }
 
 body .wrapper main {
@@ -185,29 +199,46 @@ body .wrapper footer {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 1rem;
 }
 
 body .wrapper footer img {
-  width: 1vw;
+  position: absolute;
+  bottom: 10px;
+  right: 2vw;
+  width: 22px;
+}
+
+body .wrapper footer p {
+  position: absolute;
+  bottom: 10px;
+  right: 7vw;
+  font-size: 0.8rem;
+  color: rgba(39, 38, 38, 0.562);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navLeft {
-  opacity: .5;
   -webkit-transform: translateX(-3px);
           transform: translateX(-3px);
 }
 
 .Left {
-  opacity: .5;
   -webkit-transform: translateX(-3px);
           transform: translateX(-3px);
 }
 
 .navRight {
-  opacity: 1;
   -webkit-transform: translateX(3px);
           transform: translateX(3px);
+}
+
+.hide {
+  opacity: 0.4;
 }
 
 @-webkit-keyframes svgAnimation {

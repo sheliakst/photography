@@ -3,16 +3,12 @@ $(document).ready(function() {
     $("nav li").removeClass("Left");
 
     $("nav  li")
-      .not($(this))
-      .addClass("navLeft");
+      .not($(this)).addClass("navLeft hide");
   });
+  
+
   $("nav li ").mouseleave(function() {
-    $("nav li").removeClass("navLeft");
+    $("nav li").removeClass("navLeft hide");
+
   });
-
-
-
-
-
-
 });
